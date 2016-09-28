@@ -2,7 +2,7 @@
 
 **Author(s):** _Kaiqin Huang, Nengyin Zhu(Helen)_
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-05-RedYellow.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-05-RedYellow)
+[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-05-redyellow.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-05-redyellow)
 
 **Due date:** 2016/10/04
 
