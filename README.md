@@ -26,7 +26,12 @@ Complete the following exercises, saving your solutions in the indicated files. 
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**
+In this class we learned abstract class, which is very useful for object-oriented programming. 
+
+Besides, the mathematic about how to implement a plane is really good, (x + y * 1j). I steped in implementing mathematics in python. I hope to practice more about this in the following classes. 
+
+**
 
 ## Honor Pledge
 
