@@ -90,9 +90,11 @@ class ComplexPlane(AbsComplexPlane):
 		self.f = f
 		self.refresh()
 		return 0
-
+'''
+Test
 p1=ComplexPlane(0,3,4,0,2,3)
 p1.refresh()
 p1.zoom(1,2,2,0,3,4)
 p1.set_f(lambda x:x+2)
 p1.zoom(1,2,2,1,3,3)
+'''
