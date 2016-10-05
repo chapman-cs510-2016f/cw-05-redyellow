@@ -63,7 +63,6 @@ class ComplexPlane(AbsComplexPlane):
 				Y=self.ymin+y
 				row.append(self.f(X + Y*1j))
 			self.plane.append(row)
-		print(self.plane)
 
 	def zoom(self,xmin,xmax,xlen,ymin,ymax,ylen):
 		"""
