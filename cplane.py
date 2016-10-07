@@ -55,14 +55,14 @@ class ComplexPlane(AbsComplexPlane):
 	For every point (x + y*1j) in self.plane, replace
 	the point with the value self.f(x + y*1j). 
 		"""
-		self.plane = []
+		self.plane = []		#clear plane
 		for y in range(0, self.ylen):
 			row = []
-			for x in range(0, self.xlen):
-				X=self.xmin+x
-				Y=self.ymin+y
-				row.append(self.f(X + Y*1j))
-			self.plane.append(row)
+			for x in range(0, self.xlen): #Produce points in each row
+				X=self.xmin+x*(self.xmax-self.xmin)/(self.xlen-1)
+				Y=self.ymin+y*(self.ymax-self.ymin)/(self.ylen-1)
+				row.append(self.f(X + Y*1j)) #append each points into a inside list
+			self.plane.append(row)           #append each inside list(row) into an outside list(plane)
 
 	def zoom(self,xmin,xmax,xlen,ymin,ymax,ylen):
 		"""
@@ -89,11 +89,12 @@ class ComplexPlane(AbsComplexPlane):
 		self.f = f
 		self.refresh()
 		return 0
-'''
-Test
-p1=ComplexPlane(0,3,4,0,2,3)
+#'''
+#Test
+p1=ComplexPlane(1,2,3,0,3,7)
 p1.refresh()
+print(p1.plane)
 p1.zoom(1,2,2,0,3,4)
 p1.set_f(lambda x:x+2)
 p1.zoom(1,2,2,1,3,3)
-'''
+#'''
