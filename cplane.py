@@ -3,6 +3,13 @@
 from abscplane import AbsComplexPlane
 
 class ComplexPlane(AbsComplexPlane):
+	#
+	### INSTRUCTOR COMMENT:
+	# Update your docstrings!
+	# Your implementation should have a much more specific docstring that details
+	# exactly what is being done here. Remember that other programmers read your
+	# docstrings in the help(), so if they are wrong it is very very bad.
+	#
 	"""
 	Abstract base class for complex plane.
 	
@@ -50,6 +57,11 @@ class ComplexPlane(AbsComplexPlane):
 		self.f=lambda x: x
 	
 	def refresh(self):
+		#
+		### INSTRUCTOR COMMENT:
+		# Make sure your docstrings are indented at the same level as your function block.
+		# This makes your code easier to read.
+		#
 		"""
 	Regenerate complex plane.
 	For every point (x + y*1j) in self.plane, replace
@@ -88,7 +100,22 @@ class ComplexPlane(AbsComplexPlane):
 		"""
 		self.f = f
 		self.refresh()
+		#
+		### INSTRUCTOR COMMENT
+		# Don't return values if they don't do anything.
+		#
 		return 0
+
+
+# 
+### INSTRUCTOR COMMENT:
+# If you are writing tests, put them in a test function so that they can be
+# run by nosetests and checked by an assert.
+# If you are creating a main function to run from the command line as a script
+# put it in a __main__block.  Never leave executable code free in the module like
+# this.
+#
+
 #'''
 #Test
 p1=ComplexPlane(1,2,3,0,3,7)
